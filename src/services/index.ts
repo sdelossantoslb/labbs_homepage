@@ -1,0 +1,1 @@
+import $fetch from '../conf/axios.http'
