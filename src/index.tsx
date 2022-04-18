@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './assets/styles/style.css';
+import './assets/styles/responsive.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 import UserAppContext from './context/UserAppContext';
-
 
 ReactDOM.render(
   <React.StrictMode>
