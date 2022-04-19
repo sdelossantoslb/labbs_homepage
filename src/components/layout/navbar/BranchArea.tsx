@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
-import logoBlack from '../../assets/images/logo-black.png';
+import logo from 'src/assets/images/logo.png';
+import logoBlack from './src/assets/images/logo-black.png';
 const BranchArea = () => {
   return (
     <Link className="navbar-brand" to={'index.html'}>

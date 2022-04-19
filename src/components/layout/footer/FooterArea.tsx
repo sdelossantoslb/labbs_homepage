@@ -1,5 +1,5 @@
 import React from 'react';
-import SendEmailInput from '../SendEmailInput';
+import SendEmailInput from '../../SendEmailInput';
 
 const FooterArea = () => {
   return (

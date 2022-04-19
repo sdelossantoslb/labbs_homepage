@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/navbar';
+import Navbar from './components/layout/navbar';
 import HomePage from './pages/home';
 import AboutPage from './pages/about';
 import ServicesPage from './pages/services';
 import BlogPage from './pages/blog';
-import FooterArea from './components/footer';
+import FooterArea from './components/layout/footer';
 
 function App() {
   return (

@@ -3,6 +3,7 @@ import AboutArea from './components/AboutArea';
 import BlogSection from './components/BlogSection';
 import CarrouselBanner from './components/CarrouselBanner';
 import CounterArea from './components/CounterArea';
+import OurCustomerArea from './components/OurCustomerAre';
 import OverviewArea from './components/OverViewArea';
 import OverviewTrustUs from './components/OverviewTrustUs';
 import ServicesArea from './components/ServicesArea';
@@ -25,6 +26,7 @@ const HomePage: React.FC = () => {
       <OverviewTrustUs />
       <CounterArea />
       <BlogSection />
+      <OurCustomerArea />
     </div>
   );
 };

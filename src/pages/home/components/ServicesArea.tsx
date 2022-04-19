@@ -1,5 +1,4 @@
 import React from 'react';
-
 const ServicesArea = () => {
   return (
     <section className="services-section section-padding">
