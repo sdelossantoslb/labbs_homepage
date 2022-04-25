@@ -3,6 +3,7 @@ import { BaseComponentProps } from '../types';
 
 interface SectionProps extends BaseComponentProps {
   sectionTitle?: string;
+  enableBgGrey?: boolean;
   sectionSubTitle?: string;
   children: JSX.Element | JSX.Element[];
 }
@@ -11,10 +12,14 @@ const SectionContainer: React.FC<SectionProps> = ({
   style,
   sectionSubTitle,
   sectionTitle,
+  enableBgGrey,
   children
 }) => {
   return (
-    <section style={style} className={`section-padding ${className}`}>
+    <section
+      style={style}
+      className={`section-padding ${className} ${enableBgGrey && 'bg-gray'}`}
+    >
       <div className="container">
         {(sectionSubTitle || sectionTitle) && (
           <div className="section-title">
