@@ -1,56 +1,14 @@
-/*****************************************************************
-    Template Name    : Techvio - IT Solutions & Business Services Website Template
-    Author           : Cute Themes
-    Version          : 1.0
-    Created          : 2021
-    File Description : Main css file of the template
-*****************************************************************/
-
-/*****************************************************************
-
-** - 01 - Default CSS
-** - 02 - Preloader Area CSS
-** - 03 - Navbar Area CSS
-** - 04 - Home + Slider Area CSS
-** - 05 - Services Section CSS
-** - 06 - About Section CSS
-** - 07 - Overview Section CSS
-** - 08 - Counter Section CSS
-** - 09 - Project Section CSS
-** - 10 - Testimonial Section CSS
-** - 11 - Team Section CSS
-** - 12 - Hire Section CSS
-** - 13 - Partner Section CSS
-** - 14 - Blog Section CSS
-** - 15 - Subscribe Section CSS
-** - 16 - Other Page Banner Title Area CSS
-** - 17 - Projects Details Page Section CSS
-** - 18 - Pricing Page Area CSS
-** - 19 - 404 Error Page Area CSS
-** - 20 - Faq Page Area Styles CSS
-** - 21 - Coming Soon Page Area CSS
-** - 22 - Contact Page Section CSS
-** - 23 - Single Services Page Details CSS
-** - 24 - Blog Details Page Area CSS
-** - 25 - Blog Page Sidebar Widget Area CSS
-** - 26 - Blog Page Number Pagination Area CSS
-** - 27 - Terms & Conditions - Privacy Policy Page Section CSS
-** - 28 - All Page Footer Section CSS
-** - 29 - Page Copyright Section CSS
-
-*****************************************************************/
-
-/**************************************
- ** - 01 - Default CSS
- **************************************/
-
 body {
   padding: 0;
   margin: 0;
   font-size: 15px;
   font-family: 'Catamaran', sans-serif;
 }
-
+.navbar-brand {
+  width: 20%;
+  min-width: 100px;
+  max-width: 300px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -1868,7 +1826,8 @@ p:last-child {
   will-change: transform;
 }
 
-.services-icon i {
+.services-icon i,
+.services-icon svg {
   color: #ff561d;
   font-size: 55px;
   -webkit-transition: 0.5s;
@@ -2323,7 +2282,8 @@ p:last-child {
   margin-right: 0px;
 }
 
-.rating-box ul li i {
+.rating-box ul li i,
+.rating-box ul li svg {
   color: #ffce39;
   font-size: 16px;
 }
@@ -2992,7 +2952,8 @@ p:last-child {
   font-weight: 600;
 }
 
-.projects-details-desc .features-text h4 i {
+.projects-details-desc .features-text h4 i,
+.projects-details-desc .features-text h4 svg {
   font-size: 16px;
   margin-right: 4px;
   color: #7b68ee;
@@ -3276,7 +3237,8 @@ p:last-child {
   background: #7b68ee;
 }
 
-.faq-accordion .accordion .accordion-item .accordion-title i {
+.faq-accordion .accordion .accordion-item .accordion-title i,
+.faq-accordion .accordion .accordion-item .accordion-title svg {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -3288,7 +3250,8 @@ p:last-child {
   font-size: 15px;
 }
 
-.faq-accordion .accordion .accordion-item .active.accordion-title i {
+.faq-accordion .accordion .accordion-item .active.accordion-title i,
+.faq-accordion .accordion .accordion-item .active.accordion-title svg {
   color: #fff;
 }
 

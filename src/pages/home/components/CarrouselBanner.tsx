@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../../assets/images/home-font.png';
 import BottomShape from '../../../assets/images/home-bottom-shape.png';
 import LinkButton from 'src/components/ui/LinkButton';
+import useLocateContext from 'src/hooks/useLocateContext';
 
 interface CarrouselBannerProps {
   title: string;
@@ -12,6 +13,8 @@ const CarrouselBanner = ({
   title,
   textBannerMessage
 }: CarrouselBannerProps) => {
+  const lang = useLocateContext();
+
   return (
     <div className="home-area">
       <div className="d-table">
@@ -24,13 +27,13 @@ const CarrouselBanner = ({
                   <p>{textBannerMessage}</p>
                   <div className="banner-btn">
                     <LinkButton
-                      href=""
+                      href="/about"
                       className="default-btn-one"
-                      text="About Us"
+                      text={lang.buttonAbouttUs}
                     >
                       <span></span>
                     </LinkButton>
-                    <LinkButton href="contact.html" text="Contact Us">
+                    <LinkButton href="/contact" text={lang.buttonContactUs}>
                       <span></span>
                     </LinkButton>
                   </div>

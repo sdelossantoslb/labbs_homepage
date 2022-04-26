@@ -1,4 +1,5 @@
 import React from 'react';
+import OnlineAppointmentButton from 'src/pages/pages-components/OnlineAppointmentButton';
 import BranchArea from './BranchArea';
 import NavbarMenu from './NavbarMenu';
 
@@ -14,6 +15,9 @@ const NavbarArea = () => {
               id="navbarSupportedContent"
             >
               <NavbarMenu />
+              <div className="other-option">
+                <OnlineAppointmentButton />
+              </div>
             </div>
           </nav>
         </div>

@@ -1,12 +1,9 @@
 import React from 'react';
-import AboutArea from './components/AboutArea';
+import ServicesArea from '../services/components/ServicesArea';
+import AppointmentSection from './components/AppointmentSection';
 import BlogSection from './components/BlogSection';
 import CarrouselBanner from './components/CarrouselBanner';
-import CounterArea from './components/CounterArea';
-import OurCustomerArea from './components/OurCustomerAre';
-import OverviewArea from './components/OverViewArea';
-import OverviewTrustUs from './components/OverviewTrustUs';
-import ServicesArea from './components/ServicesArea';
+import OurCertifications from './components/OurCertifications';
 
 const messageBanner = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna
@@ -17,16 +14,13 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <CarrouselBanner
-        title="IT Solutions & Business Services Company"
+        title="Servicio de Biometria y Balistica"
         textBannerMessage={messageBanner}
       />
       <ServicesArea />
-      <AboutArea />
-      <OverviewArea />
-      <OverviewTrustUs />
-      <CounterArea />
+      <AppointmentSection />
       <BlogSection />
-      <OurCustomerArea />
+      <OurCertifications />
     </div>
   );
 };

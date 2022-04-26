@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from 'src/assets/images/logo.png';
-import logoBlack from './src/assets/images/logo-black.png';
+import logo from 'src/assets/images/labbs_icon.webp';
 const BranchArea = () => {
   return (
-    <Link className="navbar-brand" to={'index.html'}>
+    <Link className="navbar-brand" to={'i/'}>
       <img src={logo} className="white-logo" alt="logo" />
     </Link>
     // <div className="techvio-responsive-nav">

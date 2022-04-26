@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaChevronDown } from 'react-icons/fa';
+import useLocateContext from 'src/hooks/useLocateContext';
 
 interface NavItemProps {
   title: string;
@@ -32,35 +33,28 @@ export const NavbarItem = ({
   );
 };
 const NavbarMenu = () => {
+  const lang = useLocateContext();
+
   const ItemMenu: NavItemProps[] = [
     {
-      title: 'Home',
-      href: '/',
-      icon: <FaChevronDown />
-    },
-    {
-      title: 'About Us',
-      href: '/about'
-    },
-    {
-      title: 'About Us',
-      href: '/about'
-    },
-    {
-      title: 'Services',
-      href: '/services'
-    },
-    {
-      title: 'Projects',
+      title: lang.homeMenuText,
       href: '/'
     },
     {
-      title: 'Blog',
-      href: '/Blog'
+      title: lang.buttonAbouttUs,
+      href: '/about'
     },
     {
-      title: 'Blog',
-      href: '/Contact'
+      title: lang.servicesMenuText,
+      href: '/services'
+    },
+    {
+      title: lang.comunicationsMenuText,
+      href: '/blogs'
+    },
+    {
+      title: lang.contactUsMenuText,
+      href: '/contact'
     }
   ];
 
