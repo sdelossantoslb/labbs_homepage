@@ -18,7 +18,7 @@ const SectionContainer: React.FC<SectionProps> = ({
   return (
     <section
       style={style}
-      className={`section-padding ${className} ${enableBgGrey && 'bg-gray'}`}
+      className={`section-padding ${className} ${enableBgGrey && 'bg-grey'}`}
     >
       <div className="container">
         {(sectionSubTitle || sectionTitle) && (

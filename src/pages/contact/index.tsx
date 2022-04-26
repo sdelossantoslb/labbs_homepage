@@ -10,7 +10,7 @@ const ContactPage = () => {
       <PageTitleArea title="Contacto" imgSrc="" />
       <SectionContainer
         sectionSubTitle="Alguna duda?"
-        sectionTitle="Escribenos"
+        sectionTitle="Contactanos"
       >
         <GridRow className="align-items-cente">
           <ContactUsForm />

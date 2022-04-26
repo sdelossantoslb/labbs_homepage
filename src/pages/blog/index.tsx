@@ -13,6 +13,7 @@ const BlogPage: React.FC = () => {
     <>
       <PageTitleArea title="Nuestra Comunidad" imgSrc="" />
       <SectionContainer
+        enableBgGrey={true}
         sectionSubTitle="Que te gustaria saber?"
         sectionTitle="Preguntas Frecuetes"
       >
@@ -22,7 +23,7 @@ const BlogPage: React.FC = () => {
         <GridRow>
           <div className="col-lg-8 col-md-12">
             <GridRow>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-12 col-md-12">
                 <PostBlogCar
                   PostImgURL={tmpBlogImage}
                   Author="Author"

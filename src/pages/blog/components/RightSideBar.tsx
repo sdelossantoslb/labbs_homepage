@@ -1,23 +1,12 @@
 import React from 'react';
+import SearchInput from 'src/components/ui/SearchInput';
 
 const RightSideBar = () => {
   return (
     <aside className="widget-area" id="secondary">
-      <section className="widget widget_search">
-        <form className="search-form search-top">
-          <label>
-            <span className="screen-reader-text">Search for:</span>
-            <input
-              type="search"
-              className="search-field"
-              placeholder="Search..."
-            />
-          </label>
-          <button type="submit">
-            <i className="fas fa-search"></i>
-          </button>
-        </form>
-      </section>
+      {/* <section className="widget widget_search">
+        <SearchInput />
+      </section> */}
       <section className="widget widget_techvio_posts_thumb">
         <h3 className="widget-title">Popular Posts</h3>
         <article className="item">
