@@ -41,7 +41,7 @@ const NavbarMenu = () => {
       href: '/'
     },
     {
-      title: lang.buttonAbouttUs,
+      title: lang.aboutUsMenuText,
       href: '/about'
     },
     {

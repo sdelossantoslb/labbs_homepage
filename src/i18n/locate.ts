@@ -1,7 +1,7 @@
 export interface locate {
   companyName: string;
   homeMenuText: string;
-  aboutUsText: string;
+  aboutUsMenuText: string;
   servicesMenuText: string;
   comunicationsMenuText: string;
   contactUsMenuText: string;

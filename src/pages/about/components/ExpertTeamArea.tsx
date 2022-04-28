@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionContainer from 'src/components/SectionContainer';
-import tempImage from 'src/assets/images/team/team-1.jpg';
+import tempImage from 'src/assets/images/team/ceo.jpg';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import BoxImageContent from 'src/pages/pages-components/BoxImageContent';
 import { GridRow } from 'src/components/ui/Bootstrap';

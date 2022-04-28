@@ -6,8 +6,17 @@ import NavbarMenu from './NavbarMenu';
 const NavbarArea = () => {
   return (
     <div className="navbar-area">
-      <div className="techvio-nav">
+      <div className="techvio-responsive-nav">
         <div className="container">
+          <div className="techvio-responsive-menu">
+            <div className="logo">
+              <BranchArea />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="techvio-nav">
+        <div className="container">+
           <nav className="navbar navbar-expand-md navbar-light">
             <BranchArea />
             <div

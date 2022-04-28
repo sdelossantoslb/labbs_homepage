@@ -2,7 +2,7 @@ import { locate } from './locate';
 
 const esLang: locate = {
   homeMenuText: 'Inicio',
-  aboutUsText: 'Nosotros',
+  aboutUsMenuText: 'Nosotros',
   servicesMenuText: 'Servicios',
   comunicationsMenuText: 'Comunidad',
   onlineAppointmentText: 'Cita Online',
