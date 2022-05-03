@@ -19,11 +19,15 @@ const BlogPage: React.FC = () => {
       >
         <FAQSection />
       </SectionContainer>
-      <BlogSection>
-        <GridRow>
-          <div className="col-lg-8 col-md-12">
+      <SectionContainer
+        enableBgGrey={true}
+        sectionSubTitle="Noticias e Informaciones"
+        sectionTitle="Ultimas Noticias"
+      >
+        <BlogSection>
+          <GridRow>
             <GridRow>
-              <div className="col-lg-12 col-md-12">
+              <div className="col-lg-8 col-md-8">
                 <PostBlogCar
                   PostImgURL={tmpBlogImage}
                   Author="Author"
@@ -32,7 +36,7 @@ const BlogPage: React.FC = () => {
                   PostTitle="Announcing Our New Smiles for Success Charity"
                 />
               </div>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
                 <PostBlogCar
                   PostImgURL={tmpBlogImage}
                   Author="Author"
@@ -41,7 +45,16 @@ const BlogPage: React.FC = () => {
                   PostTitle="Announcing Our New Smiles for Success Charity"
                 />
               </div>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
+                <PostBlogCar
+                  PostImgURL={tmpBlogImage}
+                  Author="Author"
+                  PostDate={'20 Jun 2022'}
+                  PostResume="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt"
+                  PostTitle="Announcing Our New Smiles for Success Charity"
+                />
+              </div>
+              <div className="col-lg-4 col-md-4">
                 <PostBlogCar
                   PostImgURL={tmpBlogImage}
                   Author="Author"
@@ -51,12 +64,12 @@ const BlogPage: React.FC = () => {
                 />
               </div>
             </GridRow>
-          </div>
-          <div className="col-lg-4 col-md-12">
+            {/* <div className="col-lg-4 col-md-12">
             <RightSideBar />
-          </div>
-        </GridRow>
-      </BlogSection>
+          </div> */}
+          </GridRow>
+        </BlogSection>
+      </SectionContainer>
     </>
   );
 };

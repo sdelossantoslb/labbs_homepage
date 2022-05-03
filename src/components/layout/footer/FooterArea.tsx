@@ -1,10 +1,12 @@
 import React from 'react';
+import useLocateContext from 'src/hooks/useLocateContext';
 import SendEmailInput from '../../SendEmailInput';
 
 const FooterArea = () => {
+  const lang = useLocateContext();
   return (
     <section className="footer-subscribe-wrapper">
-      <div className="subscribe-area">
+      {/* <div className="subscribe-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
@@ -21,7 +23,7 @@ const FooterArea = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="footer-area ptb-100">
         <div className="container">
           <div className="row">
@@ -30,12 +32,7 @@ const FooterArea = () => {
                 <div className="footer-heading">
                   <h3>About Us</h3>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  consectetur laboris.
-                </p>
+                <p>{lang.aboutUsDescription}</p>
                 <ul className="footer-social">
                   <li>
                     <a href="#">
@@ -67,52 +64,20 @@ const FooterArea = () => {
             <div className="col-lg-2 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="footer-heading">
-                  <h3>Our Services</h3>
+                  <h3>Nuestros Servicios</h3>
                 </div>
                 <ul className="footer-quick-links">
-                  <li>
-                    <a href="#">IT Solution</a>
-                  </li>
-                  <li>
-                    <a href="projects.html">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="services.html">Networking Services</a>
-                  </li>
-                  <li>
-                    <a href="team.html">SEO Optimization</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">App Optimization</a>
-                  </li>
+                  {lang.ourServicesProvided.map((serv) => {
+                    return (
+                      <li>
+                        <a href="#">{serv.title}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
-                <div className="footer-heading">
-                  <h3>Useful Links</h3>
-                </div>
-                <ul className="footer-quick-links">
-                  <li>
-                    <a href="about.html">About Us</a>
-                  </li>
-                  <li>
-                    <a href="projects.html">Case Study</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="terms-condition.html">Terms & Conditions</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="footer-heading">
                   <h3>Contact Info</h3>

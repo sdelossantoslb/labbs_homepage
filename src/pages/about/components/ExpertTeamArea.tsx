@@ -90,7 +90,11 @@ const ExpertTeamArea = () => {
     </div>
   ));
   return (
-    <SectionContainer sectionTitle="Expert Team" sectionSubTitle="Team Members">
+    <SectionContainer
+      sectionTitle="Expert Team"
+      enableBgGrey={true}
+      sectionSubTitle="Team Members"
+    >
       <GridRow>{RenderTeams}</GridRow>
     </SectionContainer>
   );

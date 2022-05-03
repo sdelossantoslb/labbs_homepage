@@ -6,14 +6,11 @@ import AppointmentImage from 'src/assets/images/appointme.svg';
 import OverViewContent from 'src/components/OverViewContent';
 import OnlineAppointmentButton from 'src/pages/pages-components/OnlineAppointmentButton';
 
-const message = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-do eiusmod tempor incididunt ut labore et dolore magna
-aliqua, magna aliqua. ipsum is simply dummy text of the
-printing.`;
+const message = `Puede realizar su cita de manera online para reducir su tiempo de espera y realizar su proceso balistico de una manera rápida y organizada.`;
 
 const AppointmentSection = () => {
   return (
-    <SectionContainer enableBgGrey={true}>
+    <SectionContainer enableBgGrey={false}>
       <GridRow className="align-items-center">
         <div className="col-md-6">
           <OverViewContent subTitle="Visitanos" title="Realice su cita online">

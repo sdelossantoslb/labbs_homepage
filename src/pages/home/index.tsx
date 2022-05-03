@@ -3,6 +3,7 @@ import ServicesArea from '../services/components/ServicesArea';
 import AppointmentSection from './components/AppointmentSection';
 import BlogSection from './components/BlogSection';
 import CarrouselBanner from './components/CarrouselBanner';
+import ConsultaPagosSection from './components/ConsultaPagosSection';
 import OurCertifications from './components/OurCertifications';
 
 const messageBanner = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
       />
       <ServicesArea />
       <AppointmentSection />
+      <ConsultaPagosSection />
       <BlogSection />
       <OurCertifications />
     </div>

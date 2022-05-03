@@ -3,6 +3,8 @@ import Banner from '../../../assets/images/home-font.png';
 import BottomShape from '../../../assets/images/home-bottom-shape.png';
 import LinkButton from 'src/components/ui/LinkButton';
 import useLocateContext from 'src/hooks/useLocateContext';
+import ContactButton from 'src/pages/pages-components/ContactButton';
+import AboutButton from './AboutButton';
 
 interface CarrouselBannerProps {
   title: string;
@@ -21,27 +23,14 @@ const CarrouselBanner = ({
         <div className="d-table-cell">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="main-banner-content">
+              <div className="col-lg-12 col-md-12">
+                <div className="main-banner-content center-content">
                   <h1>{title}</h1>
                   <p>{textBannerMessage}</p>
                   <div className="banner-btn">
-                    <LinkButton
-                      href="/about"
-                      className="default-btn-one"
-                      text={lang.buttonAbouttUs}
-                    >
-                      <span></span>
-                    </LinkButton>
-                    <LinkButton href="/contact" text={lang.buttonContactUs}>
-                      <span></span>
-                    </LinkButton>
+                    <AboutButton />
+                    <ContactButton />
                   </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12">
-                <div className="banner-image">
-                  <img src={Banner} alt="image" />
                 </div>
               </div>
             </div>

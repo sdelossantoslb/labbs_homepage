@@ -12,6 +12,7 @@ const ServicesArea = () => {
 
   return (
     <SectionContainer
+      enableBgGrey={true}
       sectionTitle={lang.ourServicesHeader}
       sectionSubTitle={lang.ourServicesSubHeader}
     >

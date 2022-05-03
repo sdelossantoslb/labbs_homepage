@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaChevronDown } from 'react-icons/fa';
+import { AiFillCaretDown } from 'react-icons/ai';
 import useLocateContext from 'src/hooks/useLocateContext';
 
 interface NavItemProps {
@@ -46,7 +46,14 @@ const NavbarMenu = () => {
     },
     {
       title: lang.servicesMenuText,
-      href: '/services'
+      href: '/services',
+      icon: <AiFillCaretDown />,
+      subItems: [
+        {
+          title: 'Consulta Historico',
+          href: '/consulta/historico'
+        }
+      ]
     },
     {
       title: lang.comunicationsMenuText,

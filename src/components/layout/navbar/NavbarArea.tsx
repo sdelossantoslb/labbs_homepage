@@ -16,7 +16,7 @@ const NavbarArea = () => {
         </div>
       </div>
       <div className="techvio-nav">
-        <div className="container">+
+        <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <BranchArea />
             <div

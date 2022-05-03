@@ -32,7 +32,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     );
   return (
     <Link to={href} style={style} className={`default-btn ${className}`}>
-      {text} {children}
+      {text} {children || <br></br>}
     </Link>
   );
 };

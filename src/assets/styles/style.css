@@ -135,6 +135,11 @@ p:last-child {
   box-shadow: 0 7px 25px rgb(123, 104, 238, 0.25);
 }
 
+.center-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .default-btn span {
   position: absolute;
   display: block;
@@ -219,7 +224,7 @@ p:last-child {
 .section-title h6 {
   font-size: 16px;
   font-weight: 700;
-  color: #ff9800;
+  color: #003764;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -1618,7 +1623,7 @@ p:last-child {
     linear,
     left top,
     left bottom,
-    from(#370b6f),
+    from(#003764),
     color-stop(#00429b),
     color-stop(#006dba),
     color-stop(#0095ce),
@@ -1626,7 +1631,7 @@ p:last-child {
   );
   background: linear-gradient(
     to bottom,
-    #370b6f,
+    #003764,
     #00429b,
     #006dba,
     #0095ce,
@@ -2600,10 +2605,10 @@ p:last-child {
 }
 
 .partner-list .partner-item {
-  -ms-flex: 0 0 20%;
+  -ms-flex: 0 0 30%;
   -webkit-box-flex: 0;
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 30%;
+  max-width: 30%;
   padding-left: 10px;
   padding-right: 10px;
 }

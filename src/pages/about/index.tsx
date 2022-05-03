@@ -5,14 +5,16 @@ import OurHistoryArea from './components/OurHistoryArea';
 import OurMissionArea from './components/OurMissionArea';
 import OurVisionArea from './components/OurVisionArea';
 import imgAbout from 'src/assets/images/about/about_team.jpeg';
+import DownloadDocuments from './components/DownloadDocuments';
+import OurTeamContent from './components/OurTeamContent';
 
 const AboutPage: React.FC = () => {
   return (
     <div>
       <PageTitleArea title="Sobre Nosotros" imgSrc={imgAbout} />
       <OurHistoryArea />
-      <OurMissionArea />
-      <OurVisionArea />
+      <OurTeamContent />
+      <DownloadDocuments />
       <ExpertTeamArea />
     </div>
   );
