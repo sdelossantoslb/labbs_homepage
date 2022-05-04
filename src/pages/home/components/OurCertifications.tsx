@@ -37,8 +37,8 @@ const OurCertifications = () => {
   return (
     <SectionContainer sectionTitle="Certificaciones" enableBgGrey={true}>
       <div className="partner-list center-content">
-        {listCertificaciones.map((img) => (
-          <PartnerItem href={img.link ?? ''} partnerImg={img.image} />
+        {listCertificaciones.map((img,inx) => (
+          <PartnerItem key={inx} href={img.link ?? ''} partnerImg={img.image} />
         ))}
       </div>
     </SectionContainer>

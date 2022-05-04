@@ -18,7 +18,7 @@ const ServicesArea = () => {
     >
       <GridRow>
         {services.map(({ title, descripcion }, inx) => (
-          <div className="col-lg-6 col-md-6">
+          <div className="col-lg-6 col-md-6" key={inx}>
             <div className="single-services-item">
               <div className="services-icon">{IconstList[inx]}</div>
               <h3>{title}</h3>

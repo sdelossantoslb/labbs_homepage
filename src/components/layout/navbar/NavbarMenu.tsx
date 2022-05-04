@@ -65,7 +65,7 @@ const NavbarMenu = () => {
     }
   ];
 
-  const items = ItemMenu.map((i) => <NavbarItem {...i} />);
+  const items = ItemMenu.map((i,indx) => <NavbarItem key={indx} {...i} />);
 
   return <ul className="navbar-nav">{items}</ul>;
 };

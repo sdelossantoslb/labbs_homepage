@@ -36,25 +36,21 @@ const FooterArea = () => {
                 <ul className="footer-social">
                   <li>
                     <a href="#">
-                      {' '}
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      {' '}
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      {' '}
                       <i className="fab fa-pinterest"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      {' '}
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
@@ -67,9 +63,9 @@ const FooterArea = () => {
                   <h3>Servicios</h3>
                 </div>
                 <ul className="footer-quick-links">
-                  {lang.ourServicesProvided.map((serv) => {
+                  {lang.ourServicesProvided.map((serv, k) => {
                     return (
-                      <li>
+                      <li key={k}>
                         <a href="#">{serv.title}</a>
                       </li>
                     );
