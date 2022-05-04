@@ -64,7 +64,7 @@ const FooterArea = () => {
             <div className="col-lg-2 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="footer-heading">
-                  <h3>Nuestros Servicios</h3>
+                  <h3>Servicios</h3>
                 </div>
                 <ul className="footer-quick-links">
                   {lang.ourServicesProvided.map((serv) => {
@@ -80,29 +80,29 @@ const FooterArea = () => {
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="footer-heading">
-                  <h3>Contact Info</h3>
+                  <h3>Contacto</h3>
                 </div>
                 <div className="footer-info-contact">
                   {' '}
                   <i className="flaticon-phone-call"></i>
                   <h3>Phone</h3>
                   <span>
-                    <a href="tel:0802235678">080 707 555-321</a>
+                    <a href="tel:0802235678"> (809)-620-7462</a>
                   </span>
                 </div>
-                <div className="footer-info-contact">
-                  {' '}
+                {/* <div className="footer-info-contact">
                   <i className="flaticon-envelope"></i>
                   <h3>Email</h3>
                   <span>
                     <a href="mailto:demo@example.com">demo@example.com</a>
                   </span>
-                </div>
+                </div> */}
                 <div className="footer-info-contact">
-                  {' '}
                   <i className="flaticon-placeholder"></i>
                   <h3>Address</h3>
-                  <span>526 Melrose Street, Water Mill, 11976 New York</span>
+                  <span>
+                    Avenida México, #66, Gazcue, Santo Domingo, D.N. 10204
+                  </span>
                 </div>
               </div>
             </div>

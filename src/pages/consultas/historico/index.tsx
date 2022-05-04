@@ -19,7 +19,7 @@ const HistoricoPage = () => {
       if (result == null || result == '') {
         notify.warning(
           'Datos no encontrados',
-          'No se han encontrado datos con la información uministrados'
+          'No se han encontrado datos con la información suministrados'
         );
         return;
       }
@@ -27,10 +27,9 @@ const HistoricoPage = () => {
     });
   };
 
-  console.log({ currentHistorico });
   return (
     <>
-      <PageTitleArea title="Consultas" imgSrc="" />
+      {/* <PageTitleArea title="Consultas" imgSrc="" /> */}
       <SectionContainer
         enableBgGrey={true}
         sectionSubTitle="Consulta de Información"

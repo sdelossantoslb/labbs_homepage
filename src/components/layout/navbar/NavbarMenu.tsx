@@ -47,13 +47,13 @@ const NavbarMenu = () => {
     {
       title: lang.servicesMenuText,
       href: '/services',
-      icon: <AiFillCaretDown />,
-      subItems: [
-        {
-          title: 'Consulta Historico',
-          href: '/consulta/historico'
-        }
-      ]
+      icon: <AiFillCaretDown />
+      // subItems: [
+      //   {
+      //     title: 'Consulta Historico',
+      //     href: '/consulta/historico'
+      //   }
+      // ]
     },
     {
       title: lang.comunicationsMenuText,

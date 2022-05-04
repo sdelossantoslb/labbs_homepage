@@ -20,7 +20,7 @@ const ContactPage = () => {
               <div className="col-md-6">
                 <ContactInfo
                   title="Santo Domingo Norte"
-                  descripcion="Estamos ubicados en, Av. México 66, Santo Domingo, Justo detras del Ministerio de Educación Superior (MESCYT)"
+                  descripcion="Estamos ubicados en, Avenida México, #66, Gazcue, Santo Domingo, D.N. 10204, Justo detras del Ministerio de Educación Superior (MESCYT)"
                   phone="1-809-620-7462"
                   email="http://www.labbs.com.do/"
                 />

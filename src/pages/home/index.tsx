@@ -1,7 +1,7 @@
 import React from 'react';
 import ServicesArea from '../services/components/ServicesArea';
 import AppointmentSection from './components/AppointmentSection';
-import BlogSection from './components/BlogSection';
+import PostNewsSection from './components/PostNewsSection';
 import CarrouselBanner from './components/CarrouselBanner';
 import ConsultaPagosSection from './components/ConsultaPagosSection';
 import OurCertifications from './components/OurCertifications';
@@ -15,13 +15,13 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <CarrouselBanner
-        title="Servicio de Biometria y Balistica"
+        title="Servicio de Biometría y Balística"
         textBannerMessage={messageBanner}
       />
       <ServicesArea />
       <AppointmentSection />
       <ConsultaPagosSection />
-      <BlogSection />
+      <PostNewsSection />
       <OurCertifications />
     </div>
   );

@@ -25,3 +25,20 @@ export interface ArchivosDescargables {
   FileUrl: string;
   FileName: string;
 }
+
+export interface PostBodyContent {
+  Descripcions: string[];
+  ImagesSrc?: string[];
+}
+export interface PostNewsData {
+  Title: string;
+  Descripcions?: string;
+  Author?: string;
+  Date?: string;
+  PortraitImage?: string;
+  BodyContent?: PostBodyContent[];
+}
+export interface FrecuentQuestions {
+  Questions: string;
+  Answer?: string;
+}

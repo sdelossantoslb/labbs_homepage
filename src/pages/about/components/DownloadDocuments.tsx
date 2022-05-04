@@ -4,12 +4,16 @@ import SectionContainer from 'src/components/SectionContainer';
 import AccordionContent, {
   AccordionItem
 } from 'src/components/ui/AccordionContent';
-import { GetDocumentosLabbs } from 'src/services/documentosServices';
+import {
+  getBaseURL,
+  GetDocumentosLabbs
+} from 'src/services/documentosServices';
 import { ArchivosDescargables } from 'src/types';
 
 const DownloadDocuments = () => {
   const [listFiles, setListFiles] = useState<ArchivosDescargables[]>([]);
-  const api = 'http://192.168.30.22:5000/api/v1/docs/legal/download';
+  const api = getBaseURL('/legal/download');
+
   useEffect(() => {
     GetDocumentosLabbs().then((data) => {
       setListFiles(data);

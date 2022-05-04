@@ -3,33 +3,19 @@ import { FaPlus } from 'react-icons/fa';
 import AccordionContent, {
   AccordionItem
 } from 'src/components/ui/AccordionContent';
+import { FrecuentQuestions } from 'src/types';
 
-const FAQSection = () => {
+const FAQSection = ({ faqList }: { faqList: FrecuentQuestions[] }) => {
   return (
     <div className="faq-accordion first-faq-box">
       <AccordionContent>
-        <AccordionItem title="Pregunta 1" icon={<FaPlus />}>
-          <p className="accordion-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa officia deserunt mollit anim id est laborum.
-          </p>
-        </AccordionItem>
-        <AccordionItem title="Pregunta 2" icon={<FaPlus />}>
-          <p className="accordion-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa officia deserunt mollit anim id est laborum.
-          </p>
-        </AccordionItem>
+        {faqList.map((faq) => {
+          return (
+            <AccordionItem title={faq.Questions} icon={<FaPlus />}>
+              <p className="accordion-content">{faq.Answer}</p>
+            </AccordionItem>
+          );
+        })}
       </AccordionContent>
     </div>
   );
