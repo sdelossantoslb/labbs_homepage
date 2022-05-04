@@ -30,6 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prestart": "set NODE_OPTIONS='--max-old-space-size=5120'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
