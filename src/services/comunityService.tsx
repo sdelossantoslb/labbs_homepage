@@ -1,14 +1,15 @@
 import { FrecuentQuestions, PostNewsData } from 'src/types';
 
 import $fetch, { API_URL } from '../conf/axios.http';
-export const getBaseURL = (url: string) => `${API_URL}/docs${url}`;
+export const getBaseURL = (url: string) => `${API_URL}/comunity${url}`;
 
 export async function GetFAQ(): Promise<FrecuentQuestions[]> {
-  return [];
+  return $fetch
+    .get<FrecuentQuestions[]>(getBaseURL('/faq'))
+    .then((response) => response.data);
 }
 export async function GetNewPosts(): Promise<PostNewsData[]> {
-  return [];
-  //   return $fetch
-  //     .get<ArchivosDescargables[]>(getBaseURL('/legal/labbs'))
-  //     .then((response) => response.data);
+  return $fetch
+    .get<PostNewsData[]>(getBaseURL('/post/news'))
+    .then((response) => response.data);
 }

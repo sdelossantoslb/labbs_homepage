@@ -40,13 +40,7 @@ const MapAreaContent = () => {
             bootstrapURLKeys={{ key }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
-          >
-            <MarkerComponent
-              lat={defaultProps.center.lat}
-              lng={defaultProps.center.lng}
-              text=""
-            />
-          </GoogleMapReact>
+          ></GoogleMapReact>
         </div>
       </div>
     </div>
