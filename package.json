@@ -2,10 +2,6 @@
   "name": "labbs-portal",
   "version": "0.1.2",
   "private": true,
-  "engines": {
-    "node": "16.13.1",
-    "npm": "^6.14.13"
-  },
   "homepage": "https://sdelossantoslb.github.io",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
