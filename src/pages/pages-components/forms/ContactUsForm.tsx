@@ -17,7 +17,7 @@ const ContactUsForm = () => {
               name="name"
               className="form-control"
               required={true}
-              placeHolder="Your Name"
+              placeHolder="Nombre"
             />
           </div>
         </div>
@@ -28,7 +28,7 @@ const ContactUsForm = () => {
               name="email"
               className="form-control"
               required={true}
-              placeHolder="Your Email"
+              placeHolder="Correo"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ const ContactUsForm = () => {
               name="name"
               className="form-control"
               required={true}
-              placeHolder="Your Phone"
+              placeHolder="Número de Teléfono"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@ const ContactUsForm = () => {
               name="subject"
               className="form-control"
               required={true}
-              placeHolder="Your Subject"
+              placeHolder="Asunto"
             />
           </div>
         </div>
@@ -61,13 +61,13 @@ const ContactUsForm = () => {
               name="message"
               className="form-control"
               required={true}
-              placeHolder="Your Message"
+              placeHolder="Escribe el mensaje que deseas enviar"
             />
           </div>
         </div>
         <div className="col-lg-12 col-md-12">
           <button type="submit" className="default-btn submit-btn">
-            Send Message <span></span>
+            Enviar <span></span>
           </button>
         </div>
       </div>

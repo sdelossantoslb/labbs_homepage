@@ -22,15 +22,6 @@ const ServicesArea = () => {
               <div className="services-icon">{IconstList[inx]}</div>
               <h3>{title}</h3>
               <p>{descripcion}</p>
-              {/* {showMoreLinks.map(({ label, link }, sindex) => {
-                return (
-                  <div className="services-btn-link" key={sindex}>
-                    <a href={link} className="services-link">
-                      {label}
-                    </a>
-                  </div>
-                );
-              })} */}
             </div>
           </div>
         ))}

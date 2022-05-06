@@ -19,7 +19,7 @@ const esLang: locate = {
   ourServicesProvided: [
     {
       icon: 'FaTools',
-      title: 'Prueba Balistica',
+      title: 'Prueba Balística',
       descripcion: `La prueba balística es el requisito de mayor escala para la emisión, 
         traspaso o renovación de la licencia por porte de arma de fuego. La misma consiste en la correlación de los datos 
         del arma (modelo, marca, serie, calibre y huella balística) con los datos biométricos y las informaciones personales sociodemográficas del usuario.`,

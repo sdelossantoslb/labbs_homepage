@@ -9,7 +9,7 @@ const ButtonPagoRenovacion = () => {
         enableHtmlLink={true}
         openNewTab={true}
         href="https://mipenlinea.gob.do/Servicios/Solicitudes/RenovacionArma.aspx?opc=1"
-        text="Pago de Renovación"
+        text="Renovación"
       />
       <div className="services-btn-link">
         <a

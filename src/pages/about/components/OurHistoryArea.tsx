@@ -4,7 +4,7 @@ const OurHistoryArea = () => {
   return (
     <SectionContainer
       sectionSubTitle="Cómo Iniciamos?"
-      sectionTitle="Nuestra Historia"
+      sectionTitle="Nuestra História"
     >
       <p>
         El Laboratorio Balístico y Biométrico del Sistema Nacional de Armas

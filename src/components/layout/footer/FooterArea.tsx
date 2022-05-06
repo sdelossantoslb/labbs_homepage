@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import useLocateContext from 'src/hooks/useLocateContext';
 
 const FooterArea = () => {
@@ -11,28 +12,23 @@ const FooterArea = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="footer-heading">
-                  <h3>About Us</h3>
+                  <h3>Nosotros</h3>
                 </div>
                 <p>{lang.aboutUsDescription}</p>
                 <ul className="footer-social">
                   <li>
                     <a href="#">
-                      <i className="fab fa-facebook-f"></i>
+                      <FaFacebook />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fab fa-twitter"></i>
+                      <FaTwitter />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fab fa-pinterest"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin"></i>
+                      <FaLinkedin />
                     </a>
                   </li>
                 </ul>
@@ -60,9 +56,8 @@ const FooterArea = () => {
                   <h3>Contacto</h3>
                 </div>
                 <div className="footer-info-contact">
-                  {' '}
                   <i className="flaticon-phone-call"></i>
-                  <h3>Phone</h3>
+                  <h3>Teléfono</h3>
                   <span>
                     <a href="tel:0802235678"> (809)-620-7462</a>
                   </span>
@@ -76,7 +71,7 @@ const FooterArea = () => {
                 </div> */}
                 <div className="footer-info-contact">
                   <i className="flaticon-placeholder"></i>
-                  <h3>Address</h3>
+                  <h3>Dirección</h3>
                   <span>
                     Avenida México, #66, Gazcue, Santo Domingo, D.N. 10204
                   </span>

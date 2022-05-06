@@ -5,11 +5,12 @@ import SectionContainer from 'src/components/SectionContainer';
 import { GridRow } from 'src/components/ui/Bootstrap';
 import ContactUsForm from '../pages-components/forms/ContactUsForm';
 import ContactInfo from './component/ContactInfo';
+import imgAbout from 'src/assets/images/about/about_team.jpeg';
 
 const ContactPage = () => {
   return (
     <>
-      <PageTitleArea title="Contacto" imgSrc="" />
+      <PageTitleArea title="Contacto" imgSrc={imgAbout} />
       <div className="contact-info-wrapper">
         <div className="container">
           <SectionContainer

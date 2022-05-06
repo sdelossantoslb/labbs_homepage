@@ -6,7 +6,7 @@ import HistoryImage from 'src/assets/images/history-img.svg';
 import OverViewContent from 'src/components/OverViewContent';
 import LinkButton from 'src/components/ui/LinkButton';
 
-const message = `Puedes verificar tu historico de pagos, renovaciones, y demas, solo accede al enlace debajo para consultar demanera simple y rapida`;
+const message = `Puedes verificar tu histórico de pagos, renovaciones, y demas, solo accede al enlace debajo para consultar de manera simple y rápida`;
 
 const ConsultaPagosSection = () => {
   return (
@@ -16,10 +16,10 @@ const ConsultaPagosSection = () => {
           <OverViewImage imageSrc={HistoryImage} />
         </div>
         <div className="col-md-6">
-          <OverViewContent subTitle="Consulta" title="Consultar Historico">
+          <OverViewContent subTitle="Consulta" title="Consultar Histórico">
             <p>{message}</p>
             <br />
-            <LinkButton text="Consultar Historico" href="/services" />
+            <LinkButton text="Consultar Histórico" href="/services" />
           </OverViewContent>
         </div>
       </GridRow>

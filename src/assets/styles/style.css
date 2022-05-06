@@ -4683,7 +4683,8 @@ blockquote::after,
   margin-right: 0;
 }
 
-.single-footer-widget .footer-social i {
+.single-footer-widget .footer-social i,
+.single-footer-widget .footer-social svg {
   display: inline-block;
   height: 35px;
   width: 35px;
@@ -4697,11 +4698,13 @@ blockquote::after,
   text-align: center;
 }
 
-.single-footer-widget .footer-social i::before {
+.single-footer-widget .footer-social i::before,
+.single-footer-widget .footer-social svg::before {
   font-size: 15px;
 }
 
-.single-footer-widget .footer-social i:hover {
+.single-footer-widget .footer-social i:hover,
+.single-footer-widget .footer-social svg:hover {
   background-color: #7b68ee;
   color: #ffffff;
   border: 1px solid #7b68ee;

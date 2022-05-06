@@ -21,15 +21,15 @@ const FormConsultaHistorico = ({ onFormSubmit }: ConsultaHistoricoProps) => {
     e.preventDefault();
 
     if (consultaForm.serie === null || consultaForm.serie === '') {
-      notify.warning('Numero de Serie', 'Numero de Serie obligatorio');
+      notify.warning('Número de Serie', 'Número de Serie obligatorio');
       return;
     }
     if (consultaForm.documento === null || consultaForm.documento === '') {
-      notify.warning('Numero de Documento', 'Numero de documento obligatorio');
+      notify.warning('Número de Documento', 'Número de documento obligatorio');
       return;
     }
     if (consultaForm.reciboPago === null || consultaForm.reciboPago === '') {
-      notify.warning('Numero de Recibo', 'Numero de recibo obligatorio');
+      notify.warning('Número de Recibo', 'Número de recibo obligatorio');
       return;
     }
     onFormSubmit(consultaForm);

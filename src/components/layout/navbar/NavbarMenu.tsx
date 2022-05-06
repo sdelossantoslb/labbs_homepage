@@ -57,7 +57,7 @@ const NavbarMenu = () => {
     },
     {
       title: lang.comunicationsMenuText,
-      href: '/blogs'
+      href: '/comunity'
     },
     {
       title: lang.contactUsMenuText,
@@ -65,7 +65,7 @@ const NavbarMenu = () => {
     }
   ];
 
-  const items = ItemMenu.map((i,indx) => <NavbarItem key={indx} {...i} />);
+  const items = ItemMenu.map((i, indx) => <NavbarItem key={indx} {...i} />);
 
   return <ul className="navbar-nav">{items}</ul>;
 };

@@ -9,7 +9,7 @@ const ButtonPagoTraspaso = () => {
         enableHtmlLink={true}
         openNewTab={true}
         style={{ margin: '0 20px' }}
-        text="Pago de Traspaso"
+        text="Traspaso"
       />
       <div className="services-btn-link">
         <a

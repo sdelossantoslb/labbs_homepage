@@ -23,7 +23,7 @@ function App() {
         <Route path={'/about'} element={<AboutPage />} />
         <Route path={'/services'} element={<ServicesPage />} />
         <Route path={'/contact'} element={<ContactPage />} />
-        <Route path={'/blogs'} element={<BlogPage />} />
+        <Route path={'/comunity'} element={<BlogPage />} />
         <Route path={'/consulta/historico'} element={<HistoricoPage />} />
       </Routes>
       <FooterArea />

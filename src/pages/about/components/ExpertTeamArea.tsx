@@ -91,9 +91,9 @@ const ExpertTeamArea = () => {
   ));
   return (
     <SectionContainer
-      sectionTitle="Expert Team"
+      sectionTitle="Miembros Directivos"
       enableBgGrey={true}
-      sectionSubTitle="Team Members"
+      sectionSubTitle="Nuestro Equipo"
     >
       <GridRow>{RenderTeams}</GridRow>
     </SectionContainer>

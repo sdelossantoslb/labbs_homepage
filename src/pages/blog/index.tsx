@@ -5,6 +5,7 @@ import FAQSection from './components/FAQSection';
 import { FrecuentQuestions } from 'src/types';
 import { GetFAQ } from 'src/services/comunityService';
 import PostNewsSection from '../home/components/PostNewsSection';
+import imgAbout from 'src/assets/images/about/about_team.jpeg';
 
 const BlogPage: React.FC = () => {
   const [FAQList, setFAQList] = useState<FrecuentQuestions[]>([]);
@@ -15,7 +16,7 @@ const BlogPage: React.FC = () => {
 
   return (
     <>
-      <PageTitleArea title="Nuestra Comunidad" imgSrc="" />
+      <PageTitleArea title="Nuestra Comunidad" imgSrc={imgAbout} />
       {FAQList.length > 0 && (
         <SectionContainer
           enableBgGrey={true}
