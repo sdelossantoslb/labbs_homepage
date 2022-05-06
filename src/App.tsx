@@ -10,7 +10,7 @@ import BlogPage from './pages/blog';
 import FooterArea from './components/layout/footer';
 import ContactPage from './pages/contact';
 import HistoricoPage from './pages/consultas/historico';
-import { ReactNotifications, Store } from 'react-notifications-component';
+import { ReactNotifications } from 'react-notifications-component';
 
 // dotenf.config();
 function App() {

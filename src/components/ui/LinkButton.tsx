@@ -23,7 +23,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     return (
       <a
         href={href}
-        style={style}
+        style={style} rel="noreferrer"
         target={openNewTab ? '_blank' : '_parent'}
         className={`default-btn ${className}`}
       >

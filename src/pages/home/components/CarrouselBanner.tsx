@@ -1,7 +1,5 @@
 import React from 'react';
-import Banner from '../../../assets/images/home-font.png';
 import BottomShape from '../../../assets/images/home-bottom-shape.png';
-import LinkButton from 'src/components/ui/LinkButton';
 import useLocateContext from 'src/hooks/useLocateContext';
 import ContactButton from 'src/pages/pages-components/ContactButton';
 import AboutButton from './AboutButton';
@@ -15,7 +13,6 @@ const CarrouselBanner = ({
   title,
   textBannerMessage
 }: CarrouselBannerProps) => {
-  const lang = useLocateContext();
 
   return (
     <div className="home-area">

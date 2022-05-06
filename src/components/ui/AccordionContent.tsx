@@ -19,7 +19,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({
   return (
     <li onClick={onClick} className="accordion-item">
       <a
-        className="accordion-title"
+        className="accordion-title" rel="noreferrer"
         target={openNewTab ? '_blank' : '_self'}
         href={href}
       >

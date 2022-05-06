@@ -3,7 +3,6 @@ import { GiPistolGun, GiMedicines } from 'react-icons/gi';
 import SectionContainer from 'src/components/SectionContainer';
 import { GridRow } from 'src/components/ui/Bootstrap';
 import useLocateContext from 'src/hooks/useLocateContext';
-import esLang from 'src/i18n/es';
 
 const IconstList = [<GiPistolGun />, <GiMedicines />];
 const ServicesArea = () => {

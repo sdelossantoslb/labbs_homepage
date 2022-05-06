@@ -15,17 +15,15 @@ const PostBlogCar = ({
   Author,
   PostDate,
   PostResume,
-  PostIdentification,
   PostImgURL,
   PostTitle,
-  className,
-  style
+  className
 }: PostBlogCarProps) => {
   return (
     <div className={`${className} blog-item`}>
       <div className="blog-image">
         <a href="single-blog.html">
-          <img src={PostImgURL} alt="image" />
+          <img src={PostImgURL} />
         </a>
       </div>
       <div className="single-blog-item">

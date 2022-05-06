@@ -1,6 +1,6 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import { FaMapMarked, FaMapPin, FaMarker } from 'react-icons/fa';
+import {FaMapPin } from 'react-icons/fa';
 import styles from 'styled-components';
 
 const MarkerContainer = styles.div`

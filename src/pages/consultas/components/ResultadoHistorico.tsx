@@ -2,7 +2,6 @@ import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { GridRow } from 'src/components/ui/Bootstrap';
-import TextInputField from 'src/components/ui/TextInput';
 import { ResultConsultaHistorico } from 'src/types';
 import moment from 'moment';
 /**

@@ -13,7 +13,7 @@ const OverViewImage: React.FC<OverViewImageProps> = ({
 }) => {
   return (
     <section style={style} className={`overview-image ${className}`}>
-      <img style={imageStyle} src={imageSrc} alt="Image" />
+      <img style={imageStyle} src={imageSrc} />
     </section>
   );
 };

@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import PageTitleArea from 'src/components/PageTitleArea';
+import React, { useState } from 'react';
 import SectionContainer from 'src/components/SectionContainer';
-import CardBoxContent from 'src/components/ui/CardBoxContent';
 import useNotification from 'src/hooks/useNotification';
 import { getHistoricoLabbs } from 'src/services';
 import { PostConsultaHistorico, ResultConsultaHistorico } from 'src/types';
