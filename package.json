@@ -31,7 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "preinstall": "npm install -g npm@8.8.0 && npm config set legacy-peer-deps true",
+    "preinstall": "npm config set legacy-peer-deps true",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
