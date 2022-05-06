@@ -22,7 +22,17 @@ const esLang: locate = {
       title: 'Prueba Balistica',
       descripcion: `La prueba balística es el requisito de mayor escala para la emisión, 
         traspaso o renovación de la licencia por porte de arma de fuego. La misma consiste en la correlación de los datos 
-        del arma (modelo, marca, serie, calibre y huella balística) con los datos biométricos y las informaciones personales sociodemográficas del usuario.`
+        del arma (modelo, marca, serie, calibre y huella balística) con los datos biométricos y las informaciones personales sociodemográficas del usuario.`,
+      showMoreLinks: [
+        {
+          label: 'Realice su pago online(traspaso)',
+          link: 'https://mipenlinea.gob.do/Servicios/Solicitudes/RenovacionArma.aspx?opc=2'
+        },
+        {
+          label: 'Realice su pago online(renovación)',
+          link: 'https://mipenlinea.gob.do/Servicios/Solicitudes/RenovacionArma.aspx?opc=1'
+        }
+      ]
     },
     {
       icon: 'FaConnectdevelop',

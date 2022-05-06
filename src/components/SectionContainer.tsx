@@ -5,11 +5,15 @@ interface SectionProps extends BaseComponentProps {
   sectionTitle?: string;
   enableBgGrey?: boolean;
   sectionSubTitle?: string;
+  contentClassName?: string;
+  contentStyle?: React.CSSProperties;
   children: JSX.Element | JSX.Element[];
 }
 const SectionContainer: React.FC<SectionProps> = ({
   className = '',
   style,
+  contentStyle,
+  contentClassName,
   sectionSubTitle,
   sectionTitle,
   enableBgGrey,
@@ -20,7 +24,7 @@ const SectionContainer: React.FC<SectionProps> = ({
       style={style}
       className={`section-padding ${className} ${enableBgGrey && 'bg-grey'}`}
     >
-      <div className="container">
+      <div className={`container ${contentClassName}`} style={contentStyle}>
         {(sectionSubTitle || sectionTitle) && (
           <div className="section-title">
             {sectionSubTitle && <h6>{sectionSubTitle}</h6>}

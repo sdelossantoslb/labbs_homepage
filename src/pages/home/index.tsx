@@ -5,6 +5,7 @@ import PostNewsSection from './components/PostNewsSection';
 import CarrouselBanner from './components/CarrouselBanner';
 import ConsultaPagosSection from './components/ConsultaPagosSection';
 import OurCertifications from './components/OurCertifications';
+import PagoOnlineSection from '../services/components/PagoOnlineSection';
 
 const messageBanner = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
         textBannerMessage={messageBanner}
       />
       <ServicesArea />
+      <PagoOnlineSection />
       <AppointmentSection />
       <ConsultaPagosSection />
       <PostNewsSection />

@@ -31,7 +31,7 @@ const HistoricoPage = () => {
       <SectionContainer
         enableBgGrey={true}
         sectionSubTitle="Consulta de Información"
-        sectionTitle="Historico de Pagos"
+        sectionTitle="Histórico de Pagos"
       >
         {currentHistorico === undefined ? (
           <FormConsultaHistorico onFormSubmit={handleConsulta} />

@@ -16,17 +16,21 @@ const ServicesArea = () => {
       sectionSubTitle={lang.ourServicesSubHeader}
     >
       <GridRow>
-        {services.map(({ title, descripcion }, inx) => (
+        {services.map(({ title, descripcion, showMoreLinks = [] }, inx) => (
           <div className="col-lg-6 col-md-6" key={inx}>
             <div className="single-services-item">
               <div className="services-icon">{IconstList[inx]}</div>
               <h3>{title}</h3>
               <p>{descripcion}</p>
-              <div className="services-btn-link">
-                <a href="#" className="services-link">
-                  Leer Mas
-                </a>
-              </div>
+              {/* {showMoreLinks.map(({ label, link }, sindex) => {
+                return (
+                  <div className="services-btn-link" key={sindex}>
+                    <a href={link} className="services-link">
+                      {label}
+                    </a>
+                  </div>
+                );
+              })} */}
             </div>
           </div>
         ))}

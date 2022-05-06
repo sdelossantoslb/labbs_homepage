@@ -19,7 +19,7 @@ const ConsultaPagosSection = () => {
           <OverViewContent subTitle="Consulta" title="Consultar Historico">
             <p>{message}</p>
             <br />
-            <LinkButton text="Consultar Historico" href="/consulta/historico" />
+            <LinkButton text="Consultar Historico" href="/services" />
           </OverViewContent>
         </div>
       </GridRow>

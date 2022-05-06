@@ -1,6 +1,6 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import {FaMapPin } from 'react-icons/fa';
+import { FaMapPin } from 'react-icons/fa';
 import styles from 'styled-components';
 
 const MarkerContainer = styles.div`
@@ -40,7 +40,13 @@ const MapAreaContent = () => {
             bootstrapURLKeys={{ key }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
-          ></GoogleMapReact>
+          >
+            <MarkerComponent
+              lat={defaultProps.center.lat}
+              lng={defaultProps.center.lng}
+              text=""
+            />
+          </GoogleMapReact>
         </div>
       </div>
     </div>

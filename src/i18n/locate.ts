@@ -16,6 +16,7 @@ export interface locate {
     icon?: any;
     title: string;
     descripcion: string;
+    showMoreLinks?: Array<{ label: string; link: string }>;
   }>;
   labelAboutOur: string;
   aboutOurHeader: string;
