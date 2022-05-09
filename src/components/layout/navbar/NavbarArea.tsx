@@ -1,20 +1,13 @@
 import React from 'react';
 import OnlineAppointmentButton from 'src/pages/pages-components/OnlineAppointmentButton';
 import BranchArea from './BranchArea';
+import MobileNavMenu from './MobileNavMenu';
 import NavbarMenu from './NavbarMenu';
 
 const NavbarArea = () => {
   return (
     <div className="navbar-area">
-      <div className="techvio-responsive-nav">
-        <div className="container">
-          <div className="techvio-responsive-menu">
-            <div className="logo">
-              <BranchArea />
-            </div>
-          </div>
-        </div>
-      </div>
+      <MobileNavMenu />
       <div className="techvio-nav">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">

@@ -8,17 +8,19 @@ interface NavItemProps {
   icon?: any;
   href?: string;
   subItems?: Array<NavItemProps>;
+  onClick?: () => void;
 }
 
 export const NavbarItem = ({
   title,
   href = '',
   icon,
-  subItems = []
+  subItems = [],
+  onClick = () => {}
 }: NavItemProps) => {
   const hasSubMenu = subItems.length > 0;
   return (
-    <li className="nav-item">
+    <li className="nav-item" onClick={() => onClick()}>
       <Link to={href} className="nav-link">
         {title} {hasSubMenu && icon}
       </Link>
@@ -32,7 +34,8 @@ export const NavbarItem = ({
     </li>
   );
 };
-const NavbarMenu = () => {
+
+const NavbarMenu = ({ itemClick = () => {} }: { itemClick?: () => void }) => {
   const lang = useLocateContext();
 
   const ItemMenu: NavItemProps[] = [
@@ -48,12 +51,6 @@ const NavbarMenu = () => {
       title: lang.servicesMenuText,
       href: '/services',
       icon: <AiFillCaretDown />
-      // subItems: [
-      //   {
-      //     title: 'Consulta Historico',
-      //     href: '/consulta/historico'
-      //   }
-      // ]
     },
     {
       title: lang.comunicationsMenuText,
@@ -65,7 +62,9 @@ const NavbarMenu = () => {
     }
   ];
 
-  const items = ItemMenu.map((i, indx) => <NavbarItem key={indx} {...i} />);
+  const items = ItemMenu.map((i, indx) => (
+    <NavbarItem key={indx} {...i} onClick={itemClick} />
+  ));
 
   return <ul className="navbar-nav">{items}</ul>;
 };
