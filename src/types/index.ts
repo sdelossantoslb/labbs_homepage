@@ -32,6 +32,8 @@ export interface PostBodyContent {
 }
 export interface PostNewsData {
   Title: string;
+  PostUrl: string;
+  IsExternalLink: boolean;
   Descripcions?: string;
   Author?: string;
   Date?: string;

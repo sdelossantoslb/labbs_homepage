@@ -12,26 +12,69 @@ const PostNewsSection = () => {
     GetNewPosts().then((posts) => setPostList(posts));
   });
 
-  return postList.length > 0 ? (
-    <SectionContainer
-      sectionSubTitle="Noticias e Informaciones"
-      sectionTitle="Ultimas Noticias"
-    >
-      <GridRow>
-        {postList.map((post, inx) => {
-          return (
-            <div className="col-lg-4 col-md-6" key={inx}>
+  const postColumn1 = postList.map((post, indx) => ({
+    post,
+    odd: indx % 2 > 0
+  }));
+
+  const postBody =
+    postColumn1.length > 2 ? (
+      <>
+        <div className="col-lg-6 col-md-6">
+          {postColumn1
+            .filter((left) => left.odd)
+            .map(({ post }, inx) => (
               <PostBlogCar
+                key={inx}
                 PostImgURL={post.PortraitImage}
+                PostLink={post.PostUrl}
+                isExternalLink={post.IsExternalLink}
                 Author={post.Author}
                 PostDate={post.Date}
                 PostResume={post.Descripcions}
                 PostTitle={post.Title}
               />
-            </div>
-          );
-        })}
-      </GridRow>
+            ))}
+        </div>
+        <div className="col-lg-6 col-md-6">
+          {postColumn1
+            .filter((left) => !left.odd)
+            .map(({ post }, inx) => (
+              <PostBlogCar
+                key={inx}
+                PostImgURL={post.PortraitImage}
+                PostLink={post.PostUrl}
+                isExternalLink={post.IsExternalLink}
+                Author={post.Author}
+                PostDate={post.Date}
+                PostResume={post.Descripcions}
+                PostTitle={post.Title}
+              />
+            ))}
+        </div>
+      </>
+    ) : (
+      postList.map((post, inx) => (
+        <div className="col-lg-6 col-md-6" key={inx}>
+          <PostBlogCar
+            PostImgURL={post.PortraitImage}
+            PostLink={post.PostUrl}
+            isExternalLink={post.IsExternalLink}
+            Author={post.Author}
+            PostDate={post.Date}
+            PostResume={post.Descripcions}
+            PostTitle={post.Title}
+          />
+        </div>
+      ))
+    );
+
+  return postList.length > 0 ? (
+    <SectionContainer
+      sectionSubTitle="Noticias e Informaciones"
+      sectionTitle="Ultimas Noticias"
+    >
+      <GridRow>{postBody}</GridRow>
     </SectionContainer>
   ) : null;
 };
