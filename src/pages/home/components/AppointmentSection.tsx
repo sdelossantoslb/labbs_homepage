@@ -5,16 +5,16 @@ import { GridRow } from 'src/components/ui/Bootstrap';
 import AppointmentImage from 'src/assets/images/appointme.svg';
 import OverViewContent from 'src/components/OverViewContent';
 import OnlineAppointmentButton from 'src/pages/pages-components/OnlineAppointmentButton';
-
-const message = `Puede realizar su cita de manera online para reducir su tiempo de espera y realizar su proceso balistico de una manera rápida y organizada.`;
+import useLocateContext from 'src/hooks/useLocateContext';
 
 const AppointmentSection = () => {
+  const lang = useLocateContext();
   return (
     <SectionContainer enableBgGrey={false}>
       <GridRow className="align-items-center">
         <div className="col-md-6">
-          <OverViewContent subTitle="Visitanos" title="Realice su cita online">
-            <p>{message}</p>
+          <OverViewContent title="Realice su cita online">
+            <p>{lang.appointmentMessage}</p>
             <br />
             <OnlineAppointmentButton />
           </OverViewContent>

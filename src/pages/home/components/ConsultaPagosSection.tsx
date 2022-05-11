@@ -16,7 +16,7 @@ const ConsultaPagosSection = () => {
           <OverViewImage imageSrc={HistoryImage} />
         </div>
         <div className="col-md-6">
-          <OverViewContent subTitle="Consulta" title="Consultar Histórico">
+          <OverViewContent title="Consultar Histórico">
             <p>{message}</p>
             <br />
             <LinkButton text="Consultar Histórico" href="/services" />

@@ -7,9 +7,9 @@ import ConsultaPagosSection from './components/ConsultaPagosSection';
 import OurCertifications from './components/OurCertifications';
 import PagoOnlineSection from '../services/components/PagoOnlineSection';
 
-const messageBanner = `EL MIP ha creado, como piedra angular del SISNA, el Laboratorio Balístico y Biométrico (LABBS).
-El Laboratorio Balístico y Biométrico (LABBS), captura las informaciones sociodemográficas y biométricas de los licenciatarios;
- y las huellas balísticas de las armas, y puebla una base de datos nacional de armas legales (propiedad de civiles y de las instituciones militares y policiales).`;
+const messageBanner = `El Laboratorio Balístico y Biométrico del Sistema Nacional de Armas (LABBS), captura las informaciones sociodemográficas y biométricas de los licenciatarios, 
+                      que junto a las huellas balísticas de las arma conforman un centro de servicios y atención al usuario con una base de datos nacional de las armas legales, que sirve 
+                      como instrumento de valor estratégico para las autoridades estatales.`;
 
 const HomePage: React.FC = () => {
   return (

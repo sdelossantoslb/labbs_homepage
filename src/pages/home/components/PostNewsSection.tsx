@@ -53,6 +53,18 @@ const PostNewsSection = () => {
             ))}
         </div>
       </>
+    ) : postList.length === 1 ? (
+      <div className="col-lg-12 col-md-12">
+        <PostBlogCar
+          PostImgURL={postList[0].PortraitImage}
+          PostLink={postList[0].PostUrl}
+          isExternalLink={postList[0].IsExternalLink}
+          Author={postList[0].Author}
+          PostDate={postList[0].Date}
+          PostResume={postList[0].Descripcions}
+          PostTitle={postList[0].Title}
+        />
+      </div>
     ) : (
       postList.map((post, inx) => (
         <div className="col-lg-6 col-md-6" key={inx}>

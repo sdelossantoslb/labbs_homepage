@@ -11,12 +11,11 @@ const ContactPage = () => {
   return (
     <>
       <PageTitleArea title="Contacto" imgSrc={imgAbout} />
+      <MapAreaContent />
+
       <div className="contact-info-wrapper">
         <div className="container">
-          <SectionContainer
-            sectionSubTitle="Como llegar?"
-            sectionTitle="Nuestra Ubicación"
-          >
+          <SectionContainer sectionTitle="Nuestra Ubicación">
             <GridRow className="center-content">
               <div className="col-md-6">
                 <ContactInfo
@@ -29,17 +28,13 @@ const ContactPage = () => {
             </GridRow>
           </SectionContainer>
 
-          <SectionContainer
-            sectionSubTitle="Alguna duda?"
-            sectionTitle="Escríbenos"
-          >
+          <SectionContainer sectionTitle="Escríbenos">
             <GridRow className="align-items-cente">
               <ContactUsForm />
             </GridRow>
           </SectionContainer>
         </div>
       </div>
-      <MapAreaContent />
     </>
   );
 };

@@ -13,7 +13,7 @@ const OurTeamContent = () => {
     <SectionContainer enableBgGrey={true}>
       <GridRow className="align-items-center">
         <div className="col-md-6">
-          <OverViewContent subTitle="Sobre Nosotros" title="Nuestra Gente">
+          <OverViewContent title="Nuestra Gente">
             <p>{descripcion}</p>
           </OverViewContent>
         </div>

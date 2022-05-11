@@ -2,10 +2,7 @@ import React from 'react';
 import SectionContainer from 'src/components/SectionContainer';
 const OurHistoryArea = () => {
   return (
-    <SectionContainer
-      sectionSubTitle="Cómo Iniciamos?"
-      sectionTitle="Nuestra História"
-    >
+    <SectionContainer sectionTitle="Nuestra História">
       <p>
         El Laboratorio Balístico y Biométrico del Sistema Nacional de Armas
         (LABBS), nace como un apoyo del Plan de Seguridad Ciudadana para el

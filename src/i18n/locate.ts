@@ -12,11 +12,14 @@ export interface locate {
   carrouseSolutionDescription: string;
   ourServicesHeader: string;
   ourServicesSubHeader: string;
+  serviceDureacionLabel: string;
+  servicePriceLabel: string;
   ourServicesProvided: Array<{
     icon?: any;
     title: string;
     descripcion: string;
-    showMoreLinks?: Array<{ label: string; link: string }>;
+    TimeDuration: string;
+    Price: string;
   }>;
   labelAboutOur: string;
   aboutOurHeader: string;
@@ -30,4 +33,6 @@ export interface locate {
   contactUsHeader: string;
   phoneLable: string;
   addressLable: string;
+  requirementsLabel: string;
+  appointmentMessage: string;
 }

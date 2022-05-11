@@ -21,10 +21,7 @@ const DownloadDocuments = () => {
   }, []);
 
   return (
-    <SectionContainer
-      sectionSubTitle="Descargables"
-      sectionTitle="Documentos Legales"
-    >
+    <SectionContainer sectionTitle="Marco Legal">
       <AccordionContent>
         {listFiles.map((item, i) => {
           return (
